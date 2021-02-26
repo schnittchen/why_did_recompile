@@ -10,8 +10,13 @@ This package contains a mix task that can answer the initial question.
 
 ## Installation
 
-[TODO install as an archive]
+Install as an archive:
 
+```
+mix archive.install github schnittchen/why_did_recompile
+```
+
+<!---
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `why_did_recompile` to your list of dependencies in `mix.exs`:
 
@@ -26,6 +31,7 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/why_did_recompile](https://hexdocs.pm/why_did_recompile).
+-->
 
 ## Usage
 
