@@ -1,6 +1,12 @@
 defmodule Mix.Tasks.WhyDidRecompile do
-  @moduledoc "Printed when the user requests `mix help echo`"
-  @shortdoc "Echoes arguments"
+  @moduledoc """
+  Run as `mix why_did_recompile --compiled=path1 --changed=path2` where `path1` is a file that
+  is recompiled when a trivial change to `path2` is made. If a transitive compile time
+  dependency is found that explains why, that dependency chain is printed out.
+
+  Runs `mix xref` and analyzes its output.
+  """
+  @shortdoc "Helps analyzing source file dependencies to understand recompilations"
 
   use Mix.Task
 
